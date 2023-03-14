@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
-import bgInicio from '../img/bg-skills.jpg';
+import { Fade } from "react-awesome-reveal";
+import bgInicio from '../img/bg-skills-min.jpg';
 import iconGithub from '../img/github.png';
 import iconLinkedin from '../img/linkedin.png';
 import iconSite from '../img/website.png';
@@ -15,10 +16,11 @@ export const Habilidades = () => {
         <div className='background' style={{backgroundImage: `url(${bgInicio})`, backgroundSize:'cover'}}></div>
 
         <Menu />
-        
+        <Fade>
         <div className='info-historia'>
             <Skills />
         </div>
+        </Fade>
     </div>
     <footer>
         <div style={{marginTop:'10px'}}>

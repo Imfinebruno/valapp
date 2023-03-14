@@ -28,6 +28,18 @@ time, mark, audio, video {
 	box-sizing: border-box;
 	overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+	width: 5px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+	background: #1e1e1e;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+	background-color: #000000;    /* color of the scroll thumb */
+	border-radius: 10px;       /* roundness of the scroll thumb */
+  }
 a{
 	text-decoration: none;
 }

@@ -9,18 +9,7 @@ import { Rotas } from './Rotas';
 
 
 function App() {
-  // const { pathname } = window.location;
-
-  // let Pagina;
-  // if (pathname === '/historia') {
-  //   Pagina = Historia;
-  // }
-  // else if(pathname === '/habilidades'){
-  //   Pagina = Habilidades;
-  // }
-  // else {
-  //   Pagina = Inicio;
-  // }
+  
   return (
       <Rotas />
   );

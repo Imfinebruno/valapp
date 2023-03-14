@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
-import bgInicio from '../img/bg-inicio1.jpg';
+import { Fade } from "react-awesome-reveal";
+import bgInicio from '../img/bg-inicio1-min.jpg';
 import iconSent from '../img/icon-sentinela.png';
 import iconSentBlack from '../img/icon-sentinela-preto.png';
 import iconSkills from '../img/skills.png';
@@ -19,16 +20,18 @@ export const Inicio = () => {
         <Menu />
 
         <div className='info-inicio'>
-            <img className='iconSent' src={iconSent} alt="" style={{width:'50px', height:'50px'}}/>
-            <img className='iconSentBlack' src={iconSentBlack} alt="" style={{width:'50px', height:'50px'}}/>
+            <Fade cascade direction='up'>
+                <img className='iconSent' src={iconSent} alt="" style={{width:'50px', height:'50px'}}/>
+                <img className='iconSentBlack' src={iconSentBlack} alt="" style={{width:'50px', height:'50px'}}/>
 
-            <h1 style={{fontSize:'5em',color:'#3CDFC2'}}>SAGE</h1>
-            <p style={{marginBottom:'10px', fontSize:'1.3em'}}>
-                Diretamente da China, Sage foi a sétima agente a entrar em Valorant.
-                De acordo com suas falas, ela é o braço direito do agente Brimstone
-                e assumirá a liderança do Protocolo caso aconteça algo com o mesmo.
-            </p>
-            <img src={iconSkills}alt="" />
+                <h1 style={{fontSize:'5em',color:'#3CDFC2'}}>SAGE</h1>
+                <p style={{marginBottom:'10px', fontSize:'1.3em'}}>
+                    Diretamente da China, Sage foi a sétima agente a entrar em Valorant.
+                    De acordo com suas falas, ela é o braço direito do agente Brimstone
+                    e assumirá a liderança do Protocolo caso aconteça algo com o mesmo.
+                </p>
+                <img src={iconSkills}alt="" />
+            </Fade>
         </div>
     </div>
     <footer>
